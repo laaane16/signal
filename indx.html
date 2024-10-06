@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="package/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="pop-up">
+        <div class="container pop-up__container">
+          <div class="pop-up__burger-close" id = "burger-close"></div>
+          <div class="pop-up__content">
+            <a href="" class="logo pop-up__logo">
+              <svg class="logo__svg pop-up__logo-svg" width="132" height="29" viewBox="0 0 132 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_225_59)">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M26.9763 1.53356C27.2508 1.79666 27.4679 2.11271 27.6141 2.46217C27.7604 2.81162 27.8326 3.18704 27.8263 3.56522V3.63823C27.8232 4.00656 27.7464 4.37064 27.6005 4.7095C27.4547 5.04837 27.2425 5.35534 26.9763 5.61275C26.7104 5.88447 26.391 6.09933 26.0379 6.24402C25.6848 6.38872 25.3055 6.46018 24.9233 6.45398C24.1605 6.4583 23.4267 6.16533 22.8804 5.63841C22.3342 5.1115 22.0194 4.39298 22.0043 3.63823V3.56522C21.998 3.18704 22.0702 2.81162 22.2164 2.46217C22.3627 2.11271 22.5798 1.79666 22.8543 1.53356C23.1239 1.26228 23.4462 1.04788 23.8018 0.903297C24.1574 0.758712 24.5389 0.686944 24.9233 0.692326C25.3055 0.686133 25.6848 0.757594 26.0379 0.902289C26.391 1.04698 26.7104 1.26184 26.9763 1.53356Z" fill="#EB5C60"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M131.148 23.7707V28.453H116.825V3.5652H122.647V23.7707H131.148ZM103.112 3.5652L113.184 28.453H107.651L105.678 23.1199H95.3814L93.3926 28.453H87.9876L98.0278 3.5652H103.112ZM96.9853 18.7868H104.074L100.546 9.26337L96.9853 18.7868ZM78.637 3.5652H84.3949V28.453H79.6154L67.0892 13.3584V28.453H61.3153V3.5652H66.1269L78.637 18.6598V3.5652ZM46.3352 8.0412C45.1919 8.02617 44.0555 8.21987 42.9831 8.6126C42.0119 8.97344 41.1271 9.53017 40.3849 10.2475C39.6454 10.958 39.0707 11.8191 38.7008 12.7712C38.3006 13.8039 38.1045 14.9032 38.1234 16.0091C38.1041 17.1099 38.3002 18.2041 38.7008 19.2312C39.0792 20.1836 39.6525 21.0483 40.3849 21.7708C41.1139 22.4929 41.9882 23.0553 42.9511 23.4215C44.012 23.8153 45.1381 24.0092 46.2711 23.9929C47.4119 23.9941 48.5449 23.8063 49.6231 23.4374C50.0258 23.2974 50.4171 23.1276 50.794 22.9294V15.6282H56.1027V25.7071C54.6645 26.7575 53.0527 27.5523 51.3393 28.0562C49.5895 28.5973 47.7675 28.8756 45.9342 28.8816C44.0726 28.901 42.2236 28.5781 40.4811 27.9292C38.8575 27.3361 37.3692 26.4298 36.1026 25.2627C34.8808 24.0994 33.905 22.7074 33.2316 21.1676C32.5444 19.5339 32.2006 17.7787 32.2212 16.0091C32.2185 15.2652 32.2742 14.5223 32.388 13.787C32.9311 13.388 33.4436 12.9498 33.9213 12.4759C35.8174 10.6446 37.0565 8.25007 37.4498 5.65717C38.3916 4.99936 39.416 4.46579 40.4971 4.06994C42.2633 3.42802 44.1331 3.11066 46.0144 3.13347C48.0757 3.1273 50.1203 3.49862 52.045 4.22866C52.6052 4.43295 53.1517 4.67259 53.6809 4.94609C53.8638 5.04133 54.2006 5.23814 54.6913 5.53337V10.8506C53.8977 10.2711 53.0614 9.75114 52.1893 9.29511C51.6157 9.02426 51.0202 8.80127 50.409 8.62847C49.7565 8.44557 49.092 8.30768 48.4202 8.21579C47.7306 8.10622 47.0336 8.04786 46.3352 8.0412ZM22.0046 15.8345C22.9785 16.0497 23.9738 16.1562 24.9717 16.152C25.9311 16.1549 26.8881 16.057 27.8266 15.8599V28.453H22.0046V15.8345ZM17.7864 21.3644C17.7685 22.6224 17.4262 23.8549 16.792 24.9452C16.049 26.287 14.8863 27.354 13.4784 27.9864C11.8461 28.7538 10.0383 29.0822 8.23701 28.9387C6.26747 28.8181 4.66895 28.4827 3.44146 27.9324C2.54886 27.5603 1.70105 27.0908 0.913764 26.5325V20.501C2.0199 21.5443 3.28268 22.4117 4.65718 23.0723C6.02154 23.7241 7.10147 24.0839 7.89699 24.1516C8.66141 24.2222 9.43241 24.1468 10.1681 23.9294C10.7707 23.7614 11.3146 23.4318 11.7399 22.9771C12.0652 22.5893 12.2414 22.1001 12.2371 21.5962C12.2464 21.2861 12.1808 20.9784 12.0458 20.6984C11.9108 20.4185 11.7102 20.1745 11.4608 19.9867C10.8458 19.5243 10.1743 19.1403 9.46236 18.8439C8.65722 18.4915 7.76547 18.1265 6.79353 17.7487C5.8804 17.398 5.00202 16.9644 4.16961 16.4535C3.42314 15.9947 2.75689 15.419 2.19686 14.7488C1.67796 14.1345 1.31209 13.4082 1.12868 12.6283C0.944224 11.8801 0.850539 11.1128 0.849609 10.3427C0.886516 9.40507 1.08167 8.48018 1.427 7.6063C1.87101 6.49334 2.61423 5.52181 3.57618 4.79689C4.61548 3.96518 6.03972 3.48584 7.84888 3.34934C9.32043 3.23093 10.8013 3.30565 12.2531 3.57155C12.233 5.37842 12.6072 7.16829 13.3501 8.81894C12.8219 8.58561 12.2786 8.3873 11.7238 8.22532C10.8495 7.93348 9.92893 7.80118 9.00687 7.83486C8.49181 7.85506 7.98406 7.96243 7.50565 8.1523C7.25203 8.26721 7.02576 8.4338 6.84165 8.64117C6.68687 8.82506 6.55643 9.02775 6.45351 9.24432C6.34724 9.48427 6.26972 9.7357 6.22256 9.99349C6.16539 10.3152 6.15459 10.6433 6.19048 10.9681C6.23212 11.2609 6.33777 11.5413 6.50009 11.7897C6.66241 12.038 6.87749 12.2484 7.13034 12.4061C7.73471 12.8422 8.40629 13.1788 9.11914 13.4029C9.86333 13.6484 10.8256 13.9954 12.0061 14.4441C13.0705 14.823 14.085 15.3271 15.0278 15.9456C15.8711 16.5375 16.5514 17.3287 17.0069 18.2471C17.5063 19.2128 17.7731 20.2797 17.7864 21.3644Z" fill="#283238"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_225_59">
+                    <rect width="130.298" height="28.2464" fill="white" transform="translate(0.849609 0.692322)"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <nav class="nav pop-up__nav">
+              <ul class="nav__list pop-up__nav-list">
+                <li class="pop-up__nav-item">
+                  <a href="#about-id" class="nav__link pop-up__nav-link">О НАС</a>
+                </li>
+                <li class="pop-up__nav-item">
+                  <a href="#videos-id" class="nav__link  pop-up__nav-link">РОЛИКИ</a>
+                </li>
+                <li class="pop-up__nav-item">
+                  <a href="#services-id" class="nav__link pop-up__nav-link">УСЛУГИ</a>
+                </li>
+                <li class="pop-up__nav-item">
+                  <a href="#partners-id" class="nav__link pop-up__nav-link">ПАРТНЕРЫ</a>
+                </li>
+                <li class="pop-up__nav-item">
+                  <a href="#contacts-id" class="nav__link pop-up__nav-link">КОНТАКТЫ</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="" class="rutube pop-up__rutube">
+              <svg class="pop-up__rutube-img" width="92" height="19" viewBox="0 0 92 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_185_1815)">
+                  <path d="M10.2245 4.58887H0.103516V15.3889H2.92053V11.8752H8.31834L10.7812 15.3889H13.9355L11.2197 11.8591C12.0632 11.7295 12.6704 11.4219 13.0415 10.9361C13.4126 10.4504 13.5982 9.67315 13.5982 8.63685V7.82728C13.5982 7.21196 13.5307 6.72622 13.4126 6.35377C13.2945 5.98137 13.0921 5.65753 12.8054 5.36608C12.5017 5.09082 12.1644 4.89652 11.7595 4.76697C11.3547 4.65363 10.8486 4.58887 10.2245 4.58887ZM9.7691 9.49502H2.92053V6.96906H9.7691C10.1571 6.96906 10.4269 7.03384 10.5619 7.14718C10.6968 7.26051 10.7812 7.47103 10.7812 7.77868V8.68545C10.7812 9.00931 10.6968 9.21976 10.5619 9.33309C10.4269 9.44642 10.1571 9.49502 9.7691 9.49502Z" fill="#F2F2F2"/>
+                  <path d="M18.1261 12.1991V4.58887H15.3906V12.1343C15.3906 12.7496 15.4398 13.2515 15.5544 13.6239C15.6691 14.0126 15.8656 14.3364 16.1605 14.6117C16.4389 14.9032 16.7665 15.0974 17.1597 15.2107C17.5528 15.3403 18.0442 15.3889 18.6666 15.3889H25.2186C25.8247 15.3889 26.3161 15.3403 26.7092 15.2107C27.1023 15.0974 27.4299 14.9032 27.7248 14.6117C28.0032 14.3364 28.1998 14.0126 28.3144 13.6239C28.4292 13.2515 28.4946 12.7496 28.4946 12.1343V4.58887H25.7592V12.1991C25.7592 12.5229 25.6773 12.7334 25.5462 12.8468C25.4152 12.9601 25.1531 13.0086 24.7764 13.0086H19.1089C18.7158 13.0086 18.4537 12.9601 18.3226 12.8468C18.1916 12.7334 18.1261 12.5229 18.1261 12.1991Z" fill="#F2F2F2"/>
+                  <path d="M37.849 15.3889V6.96906H43.0552V4.58887H29.9512V6.96906H35.1572V15.3889H37.849Z" fill="#F2F2F2"/>
+                  <path d="M47.2472 12.1991V4.58887H44.5117V12.1343C44.5117 12.7496 44.5609 13.2515 44.6755 13.6239C44.7902 14.0126 44.9867 14.3364 45.2816 14.6117C45.56 14.9032 45.8876 15.0974 46.2808 15.2107C46.6739 15.3403 47.1653 15.3889 47.7877 15.3889H54.3397C54.9458 15.3889 55.4372 15.3403 55.8303 15.2107C56.2234 15.0974 56.551 14.9032 56.8459 14.6117C57.1243 14.3364 57.3209 14.0126 57.4355 13.6239C57.5502 13.2515 57.6157 12.7496 57.6157 12.1343V4.58887H54.8803V12.1991C54.8803 12.5229 54.7984 12.7334 54.6673 12.8468C54.5362 12.9601 54.2742 13.0086 53.8975 13.0086H48.23C47.8369 13.0086 47.5748 12.9601 47.4437 12.8468C47.3127 12.7334 47.2472 12.5229 47.2472 12.1991Z" fill="#F2F2F2"/>
+                  <path d="M71.6332 7.73008V7.51963C71.6332 6.51572 71.3709 5.77088 70.8456 5.30131C70.3209 4.83174 69.4846 4.58887 68.3696 4.58887H59.0703V15.3889H68.9106C70.0257 15.3889 70.862 15.1622 71.3873 14.6926C71.912 14.223 72.1743 13.4782 72.1743 12.4744V12.2477C72.1743 11.2438 71.912 10.5313 71.3873 10.1103C71.2887 10.0455 71.1901 9.99693 71.0921 9.9484C70.9935 9.8998 70.8456 9.83508 70.6655 9.77028C71.0263 9.57595 71.2722 9.31689 71.4196 9.02543C71.5511 8.73398 71.6332 8.2968 71.6332 7.73008ZM61.8093 8.91211V6.96906H67.9264C68.3202 6.96906 68.5826 7.03384 68.7141 7.14718C68.8449 7.26051 68.9106 7.47103 68.9106 7.77868V8.10254C68.9106 8.4264 68.8449 8.63685 68.7141 8.75018C68.5826 8.86358 68.3202 8.91211 67.9264 8.91211H61.8093ZM61.8093 13.0086V11.0656H68.484C68.8613 11.0656 69.1237 11.1304 69.2551 11.2438C69.386 11.3571 69.4682 11.5676 69.4682 11.8752V12.1991C69.4682 12.5229 69.386 12.7334 69.2551 12.8468C69.1237 12.9601 68.8613 13.0086 68.484 13.0086H61.8093Z" fill="#F2F2F2"/>
+                  <path d="M76.4261 6.96906H85.5575V4.58887H73.6328V15.3889H86.0088V13.0086H76.4261V11.179H85.3398L85.5575 8.79878H76.4261V6.96906Z" fill="#F2F2F2"/>
+                  <path d="M88.6886 4.05024C89.7413 4.05024 90.5952 3.20368 90.5952 2.1594C90.5952 1.11512 89.7413 0.268555 88.6886 0.268555C87.6352 0.268555 86.7812 1.11512 86.7812 2.1594C86.7812 3.20368 87.6352 4.05024 88.6886 4.05024Z" fill="#F41240"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_185_1815">
+                    <rect width="91" height="18" fill="white" transform="translate(0.103516 0.268555)"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__burger-open" id = "burger-open"></div>
+            <a href="" class="logo header__logo">
+              <svg class="logo__svg header__logo-svg" width="132" height="29" viewBox="0 0 132 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_225_59)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.9763 1.53356C27.2508 1.79666 27.4679 2.11271 27.6141 2.46217C27.7604 2.81162 27.8326 3.18704 27.8263 3.56522V3.63823C27.8232 4.00656 27.7464 4.37064 27.6005 4.7095C27.4547 5.04837 27.2425 5.35534 26.9763 5.61275C26.7104 5.88447 26.391 6.09933 26.0379 6.24402C25.6848 6.38872 25.3055 6.46018 24.9233 6.45398C24.1605 6.4583 23.4267 6.16533 22.8804 5.63841C22.3342 5.1115 22.0194 4.39298 22.0043 3.63823V3.56522C21.998 3.18704 22.0702 2.81162 22.2164 2.46217C22.3627 2.11271 22.5798 1.79666 22.8543 1.53356C23.1239 1.26228 23.4462 1.04788 23.8018 0.903297C24.1574 0.758712 24.5389 0.686944 24.9233 0.692326C25.3055 0.686133 25.6848 0.757594 26.0379 0.902289C26.391 1.04698 26.7104 1.26184 26.9763 1.53356Z" fill="#EB5C60"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M131.148 23.7707V28.453H116.825V3.5652H122.647V23.7707H131.148ZM103.112 3.5652L113.184 28.453H107.651L105.678 23.1199H95.3814L93.3926 28.453H87.9876L98.0278 3.5652H103.112ZM96.9853 18.7868H104.074L100.546 9.26337L96.9853 18.7868ZM78.637 3.5652H84.3949V28.453H79.6154L67.0892 13.3584V28.453H61.3153V3.5652H66.1269L78.637 18.6598V3.5652ZM46.3352 8.0412C45.1919 8.02617 44.0555 8.21987 42.9831 8.6126C42.0119 8.97344 41.1271 9.53017 40.3849 10.2475C39.6454 10.958 39.0707 11.8191 38.7008 12.7712C38.3006 13.8039 38.1045 14.9032 38.1234 16.0091C38.1041 17.1099 38.3002 18.2041 38.7008 19.2312C39.0792 20.1836 39.6525 21.0483 40.3849 21.7708C41.1139 22.4929 41.9882 23.0553 42.9511 23.4215C44.012 23.8153 45.1381 24.0092 46.2711 23.9929C47.4119 23.9941 48.5449 23.8063 49.6231 23.4374C50.0258 23.2974 50.4171 23.1276 50.794 22.9294V15.6282H56.1027V25.7071C54.6645 26.7575 53.0527 27.5523 51.3393 28.0562C49.5895 28.5973 47.7675 28.8756 45.9342 28.8816C44.0726 28.901 42.2236 28.5781 40.4811 27.9292C38.8575 27.3361 37.3692 26.4298 36.1026 25.2627C34.8808 24.0994 33.905 22.7074 33.2316 21.1676C32.5444 19.5339 32.2006 17.7787 32.2212 16.0091C32.2185 15.2652 32.2742 14.5223 32.388 13.787C32.9311 13.388 33.4436 12.9498 33.9213 12.4759C35.8174 10.6446 37.0565 8.25007 37.4498 5.65717C38.3916 4.99936 39.416 4.46579 40.4971 4.06994C42.2633 3.42802 44.1331 3.11066 46.0144 3.13347C48.0757 3.1273 50.1203 3.49862 52.045 4.22866C52.6052 4.43295 53.1517 4.67259 53.6809 4.94609C53.8638 5.04133 54.2006 5.23814 54.6913 5.53337V10.8506C53.8977 10.2711 53.0614 9.75114 52.1893 9.29511C51.6157 9.02426 51.0202 8.80127 50.409 8.62847C49.7565 8.44557 49.092 8.30768 48.4202 8.21579C47.7306 8.10622 47.0336 8.04786 46.3352 8.0412ZM22.0046 15.8345C22.9785 16.0497 23.9738 16.1562 24.9717 16.152C25.9311 16.1549 26.8881 16.057 27.8266 15.8599V28.453H22.0046V15.8345ZM17.7864 21.3644C17.7685 22.6224 17.4262 23.8549 16.792 24.9452C16.049 26.287 14.8863 27.354 13.4784 27.9864C11.8461 28.7538 10.0383 29.0822 8.23701 28.9387C6.26747 28.8181 4.66895 28.4827 3.44146 27.9324C2.54886 27.5603 1.70105 27.0908 0.913764 26.5325V20.501C2.0199 21.5443 3.28268 22.4117 4.65718 23.0723C6.02154 23.7241 7.10147 24.0839 7.89699 24.1516C8.66141 24.2222 9.43241 24.1468 10.1681 23.9294C10.7707 23.7614 11.3146 23.4318 11.7399 22.9771C12.0652 22.5893 12.2414 22.1001 12.2371 21.5962C12.2464 21.2861 12.1808 20.9784 12.0458 20.6984C11.9108 20.4185 11.7102 20.1745 11.4608 19.9867C10.8458 19.5243 10.1743 19.1403 9.46236 18.8439C8.65722 18.4915 7.76547 18.1265 6.79353 17.7487C5.8804 17.398 5.00202 16.9644 4.16961 16.4535C3.42314 15.9947 2.75689 15.419 2.19686 14.7488C1.67796 14.1345 1.31209 13.4082 1.12868 12.6283C0.944224 11.8801 0.850539 11.1128 0.849609 10.3427C0.886516 9.40507 1.08167 8.48018 1.427 7.6063C1.87101 6.49334 2.61423 5.52181 3.57618 4.79689C4.61548 3.96518 6.03972 3.48584 7.84888 3.34934C9.32043 3.23093 10.8013 3.30565 12.2531 3.57155C12.233 5.37842 12.6072 7.16829 13.3501 8.81894C12.8219 8.58561 12.2786 8.3873 11.7238 8.22532C10.8495 7.93348 9.92893 7.80118 9.00687 7.83486C8.49181 7.85506 7.98406 7.96243 7.50565 8.1523C7.25203 8.26721 7.02576 8.4338 6.84165 8.64117C6.68687 8.82506 6.55643 9.02775 6.45351 9.24432C6.34724 9.48427 6.26972 9.7357 6.22256 9.99349C6.16539 10.3152 6.15459 10.6433 6.19048 10.9681C6.23212 11.2609 6.33777 11.5413 6.50009 11.7897C6.66241 12.038 6.87749 12.2484 7.13034 12.4061C7.73471 12.8422 8.40629 13.1788 9.11914 13.4029C9.86333 13.6484 10.8256 13.9954 12.0061 14.4441C13.0705 14.823 14.085 15.3271 15.0278 15.9456C15.8711 16.5375 16.5514 17.3287 17.0069 18.2471C17.5063 19.2128 17.7731 20.2797 17.7864 21.3644Z" fill="#283238"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_225_59">
+                <rect width="130.298" height="28.2464" fill="white" transform="translate(0.849609 0.692322)"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <nav class="nav header__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#about-id" class="nav__link">О НАС</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#videos-id" class="nav__link">РОЛИКИ</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#services-id" class="nav__link">УСЛУГИ</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#partners-id" class="nav__link">ПАРТНЕРЫ</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contacts-id" class="nav__link">КОНТАКТЫ</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="" class="rutube header__rutube">
+              <img src="img/R.svg" alt="rutube" class="rutube__img"/>
+              <div class="rutube__container">
+                <img src="img/head rut long.svg" class="rutube__img-long"></img>
+              </div>
+            </a>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="hero" id="hero-id">
+          <div class="container">
+            <div class="hero__inner">
+              <h1 class="main-title hero__main-title">
+                Агентство S<span class="special-letter">i</span>gnal — услуги
+                по&nbsp;креативному и техническому обеспечению мероприятий
+              </h1>
+              <div class="hero__box">
+                <div class="hero__box-inner hero__number-container">
+                  <a href="tel:+79250774157" class="number hero__number"><span class="special-numbers">+7(925)</span> 077-41-57</a>
+                </div>
+                <div class="hero__box-inner hero__btn-container">
+                  <button class="hero__btn btn"><svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23 30L37 44L51 30" stroke="white" stroke-width="2"/>
+                    <circle cx="36.5" cy="36.5" r="35.5" stroke="white" stroke-width="2"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="hero__box-inner hero__btn-container hero__btn-lit-container">
+                  <button class="hero__btn-lit btn"><svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.0117 16.4384L20.683 24.1096L28.3542 16.4384" stroke="white" stroke-width="2"/>
+                    <circle cx="20.4082" cy="20" r="19" stroke="white" stroke-width="2"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="hero__box-inner hero__mail-container">
+                  <a href="mailto:info@signal-tv.com" class="mail hero__mail">info@signal-tv.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="videos" id="videos-id">
+          <div class="container">
+            <h2 class="title videos__title">
+                РОЛИКИ
+            </h2>
+          </div>
+          <div class="swiper__container-full">
+            <div class="swiper__container">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__img-border "></div>
+                    <img class="swiper-slide__img" src="img/1vid.jpg" alt="1 video">
+                    <div class="swiper-slide__button">
+                      <!-- <svg class = 'swiper-slide__play' id = "play-pause-icon" width="199" height="199" viewBox="0 0 199 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="99.5" cy="99.2" r="64" stroke="white" stroke-width="2"/>
+                        <path d="M117 98.3339C117.667 98.7188 117.667 99.6811 117 100.066L91.5 114.788C90.8333 115.173 90 114.692 90 113.922L90 84.4775C90 83.7077 90.8333 83.2266 91.5 83.6115L117 98.3339Z" stroke="white" stroke-width="2"/>
+                      </svg> -->
+                      <div class="swiper-slide__play swiper-slide__play_none_hov"></div>
+                      <div class="swiper-slide__play swiper-slide__play_hov"></div>
+                    </div>
+                    <div class="swiper-slide__content">
+                      <div class="swiper-slide__box">
+                        <p class="swiper-slide__name">Moscow Night Sport</p>
+                        <svg class="swiper-slide__svg" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 1H16M16 1V17M16 1L0.888889 16.1111" stroke="white" stroke-width="2"/>
+                        </svg>
+                      </div>
+                      <a href="" class="rutube videos__rutube">
+                        <img src="img/R.svg" alt="rutube" class="rutube__img videos__rutube-img"/>
+                        <img src="img/head rut long.svg" class="rutube__img-long videos__rutube-long-img"></img>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__img-border "></div>
+                    <img class="swiper-slide__img" src="img/2vid.jpg" alt="2 video">
+                    <div class="swiper-slide__button">
+                      <!-- <svg class = 'swiper-slide__play' id = "play-pause-icon" width="199" height="199" viewBox="0 0 199 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="99.5" cy="99.2" r="64" stroke="white" stroke-width="2"/>
+                        <path d="M117 98.3339C117.667 98.7188 117.667 99.6811 117 100.066L91.5 114.788C90.8333 115.173 90 114.692 90 113.922L90 84.4775C90 83.7077 90.8333 83.2266 91.5 83.6115L117 98.3339Z" stroke="white" stroke-width="2"/>
+                      </svg> -->
+                      <div class="swiper-slide__play swiper-slide__play_none_hov"></div>
+                      <div class="swiper-slide__play swiper-slide__play_hov"></div>
+                    </div>
+                    <div class="swiper-slide__content">
+                      <div class="swiper-slide__box">
+                        <p class="swiper-slide__name">BMX</p>
+                        <svg class="swiper-slide__svg" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 1H16M16 1V17M16 1L0.888889 16.1111" stroke="white" stroke-width="2"/>
+                        </svg>
+                      </div>
+                      <a href="" class="rutube videos__rutube">
+                        <img src="img/R.svg" alt="rutube" class="rutube__img videos__rutube-img"/>
+                        <img src="img/head rut long.svg" class="rutube__img-long videos__rutube-long-img"></img>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__img-border "></div>
+                    <img class="swiper-slide__img" src="img/3vid.jpg" alt="3 video">
+                    <div class="swiper-slide__button">
+                      <!-- <svg  class = 'swiper-slide__play' id = "play-pause-icon" width="199" height="199" viewBox="0 0 199 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="99.5" cy="99.2" r="64" stroke="white" stroke-width="2"/>
+                        <path  d="M117 98.3339C117.667 98.7188 117.667 99.6811 117 100.066L91.5 114.788C90.8333 115.173 90 114.692 90 113.922L90 84.4775C90 83.7077 90.8333 83.2266 91.5 83.6115L117 98.3339Z" stroke="white" stroke-width="2"/>
+                      </svg> -->
+                      <div class="swiper-slide__play swiper-slide__play_none_hov"></div>
+                      <div class="swiper-slide__play swiper-slide__play_hov"></div>
+                    </div>
+                    <div class="swiper-slide__content">
+                      <div class="swiper-slide__box">
+                        <p class="swiper-slide__name">Архитектура</p>
+                        <svg class="swiper-slide__svg" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 1H16M16 1V17M16 1L0.888889 16.1111" stroke="white" stroke-width="2"/>
+                        </svg>
+                      </div>
+                      <a href="" class="rutube videos__rutube">
+                        <img src="img/R.svg" alt="rutube" class="rutube__img videos__rutube-img"/>
+                        <img src="img/head rut long.svg" class="rutube__img-long videos__rutube-long-img"></img>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__img-border "></div>
+                    <img class="swiper-slide__img" src="img/4vid.jpg" alt="4 video">
+                    <div class="swiper-slide__button">
+                      <!-- <svg class = 'swiper-slide__play' id = "play-pause-icon" width="199" height="199" viewBox="0 0 199 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="99.5" cy="99.2" r="64" stroke="white" stroke-width="2"/>
+                        <path d="M117 98.3339C117.667 98.7188 117.667 99.6811 117 100.066L91.5 114.788C90.8333 115.173 90 114.692 90 113.922L90 84.4775C90 83.7077 90.8333 83.2266 91.5 83.6115L117 98.3339Z" stroke="white" stroke-width="2"/>
+                      </svg> -->
+                      <div class="swiper-slide__play swiper-slide__play_none_hov"></div>
+                      <div class="swiper-slide__play swiper-slide__play_hov"></div>
+                    </div>
+                    <div class="swiper-slide__content">
+                      <div class="swiper-slide__box">
+                        <p class="swiper-slide__name">Графика</p>
+                        <svg class="swiper-slide__svg" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 1H16M16 1V17M16 1L0.888889 16.1111" stroke="white" stroke-width="2"/>
+                        </svg>
+                      </div>
+                      <a href="" class="rutube videos__rutube">
+                        <img src="img/R.svg" alt="rutube" class="rutube__img videos__rutube-img"/>
+                        <img src="img/head rut long.svg" class="rutube__img-long videos__rutube-long-img"></img>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__img-border "></div>
+                    <img class="swiper-slide__img" src="img/1vid.jpg" alt="1 video">
+                    <div class="swiper-slide__button">
+                      <!-- <svg class = 'swiper-slide__play' id = "play-pause-icon" width="199" height="199" viewBox="0 0 199 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="99.5" cy="99.2" r="64" stroke="white" stroke-width="2"/>
+                        <path d="M117 98.3339C117.667 98.7188 117.667 99.6811 117 100.066L91.5 114.788C90.8333 115.173 90 114.692 90 113.922L90 84.4775C90 83.7077 90.8333 83.2266 91.5 83.6115L117 98.3339Z" stroke="white" stroke-width="2"/>
+                      </svg> -->
+                      <div class="swiper-slide__play swiper-slide__play_none_hov"></div>
+                      <div class="swiper-slide__play swiper-slide__play_hov"></div>
+                    </div>
+                    <div class="swiper-slide__content">
+                      <div class="swiper-slide__box">
+                        <p class="swiper-slide__name">Moscow Night Sport</p>
+                        <svg class="swiper-slide__svg" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 1H16M16 1V17M16 1L0.888889 16.1111" stroke="white" stroke-width="2"/>
+                        </svg>
+                      </div>
+                      <a href="" class="rutube videos__rutube">
+                        <img src="img/R.svg" alt="rutube" class="rutube__img videos__rutube-img"/>
+                        <img src="img/head rut long.svg" class="rutube__img-long videos__rutube-long-img"></img>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__img-border "></div>
+                    <img class="swiper-slide__img" src="img/2vid.jpg" alt="2 video">
+                    <div class="swiper-slide__button">
+                      <!-- <svg class = 'swiper-slide__play' id = "play-pause-icon" width="199" height="199" viewBox="0 0 199 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="99.5" cy="99.2" r="64" stroke="white" stroke-width="2"/>
+                        <path d="M117 98.3339C117.667 98.7188 117.667 99.6811 117 100.066L91.5 114.788C90.8333 115.173 90 114.692 90 113.922L90 84.4775C90 83.7077 90.8333 83.2266 91.5 83.6115L117 98.3339Z" stroke="white" stroke-width="2"/>
+                      </svg> -->
+                      <div class="swiper-slide__play swiper-slide__play_none_hov"></div>
+                      <div class="swiper-slide__play swiper-slide__play_hov"></div>
+                    </div>
+                    <div class="swiper-slide__content">
+                      <div class="swiper-slide__box">
+                        <p class="swiper-slide__name">BMX</p>
+                        <svg class="swiper-slide__svg" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 1H16M16 1V17M16 1L0.888889 16.1111" stroke="white" stroke-width="2"/>
+                        </svg>
+                      </div>
+                      <a href="" class="rutube videos__rutube">
+                        <img src="img/R.svg" alt="rutube" class="rutube__img videos__rutube-img"/>
+                        <img src="img/head rut long.svg" class="rutube__img-long videos__rutube-long-img"></img>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__img-border "></div>
+                    <img class="swiper-slide__img" src="img/3vid.jpg" alt="3 video">
+                    <div class="swiper-slide__button">
+                      <!-- <svg class = 'swiper-slide__play' id = "play-pause-icon" width="199" height="199" viewBox="0 0 199 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="99.5" cy="99.2" r="64" stroke="white" stroke-width="2"/>
+                        <path d="M117 98.3339C117.667 98.7188 117.667 99.6811 117 100.066L91.5 114.788C90.8333 115.173 90 114.692 90 113.922L90 84.4775C90 83.7077 90.8333 83.2266 91.5 83.6115L117 98.3339Z" stroke="white" stroke-width="2"/>
+                      </svg> -->
+                      <div class="swiper-slide__play swiper-slide__play_none_hov"></div>
+                      <div class="swiper-slide__play swiper-slide__play_hov"></div>
+                    </div>
+                    <div class="swiper-slide__content">
+                      <div class="swiper-slide__box">
+                        <p class="swiper-slide__name">Архитектура</p>
+                        <svg class="swiper-slide__svg" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 1H16M16 1V17M16 1L0.888889 16.1111" stroke="white" stroke-width="2"/>
+                        </svg>
+                      </div>
+                      <a href="" class="rutube videos__rutube">
+                        <img src="img/R.svg" alt="rutube" class="rutube__img videos__rutube-img"/>
+                        <img src="img/head rut long.svg" class="rutube__img-long videos__rutube-long-img"></img>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide__img-border "></div>
+                    <img class="swiper-slide__img" src="img/4vid.jpg" alt="4 video">
+                    <div class="swiper-slide__button">
+                      <!-- <svg class = 'swiper-slide__play' id = "play-pause-icon" width="199" height="199" viewBox="0 0 199 199" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="99.5" cy="99.2" r="64" stroke="white" stroke-width="2"/>
+                        <path d="M117 98.3339C117.667 98.7188 117.667 99.6811 117 100.066L91.5 114.788C90.8333 115.173 90 114.692 90 113.922L90 84.4775C90 83.7077 90.8333 83.2266 91.5 83.6115L117 98.3339Z" stroke="white" stroke-width="2"/>
+                      </svg> -->
+                      <div class="swiper-slide__play swiper-slide__play_none_hov"></div>
+                      <div class="swiper-slide__play swiper-slide__play_hov"></div>
+                    </div>
+                    <div class="swiper-slide__content">
+                      <div class="swiper-slide__box">
+                        <p class="swiper-slide__name">Графика</p>
+                        <svg class="swiper-slide__svg" width="17" height="17" viewBox="0 0 17 17" fill="" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 1H16M16 1V17M16 1L0.888889 16.1111" stroke="white" stroke-width="2"/>
+                        </svg>
+                      </div>
+                      <a href="" class="rutube videos__rutube">
+                        <img src="img/R.svg" alt="rutube" class="rutube__img videos__rutube-img"/>
+                        <img src="img/head rut long.svg" class="rutube__img-long videos__rutube-long-img"></img>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper__container-buttons">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+        <section class="visual" id="visual-id">
+          <img class="visual__img" src="img/Signal.png" alt="lents">
+        </section>
+        <section class="services" id="services-id">
+          <div class="container">
+            <h2 class="title services__title">УСЛУГИ</h2>
+            <div class="services__cards">
+              <div class="left-col">
+                <div class="services__card ">
+                  <span class="services__line"></span>
+                  <h3 class="services__subtitle">
+                    Трансляции спортивных мероприятий
+                  </h3>
+                  <img src="img/services 1img.jpg" alt="Футбольное поле" class="services__img">
+                  <p class="services__content-text">
+                    Организация и проведение съёмок и трансляций спортивных мероприятий в любой точке России. Опыт команды позволяет делать качественные съемки в самых разных условиях. В том числе подводная съемка и аэросъемка. Компетенции команды позволяют находить неординарные технические решения для выполнения задач заказчика.
+                  </p>
+                  <p class="services__text">Создаем полный эффект присутствия!</p>
+                </div>
+                <div class="services__card">
+                  <span class="services__line"></span>
+                  <h3 class="services__subtitle">
+                    Онлайн мероприятия
+                  </h3>
+                  <img src="img/services 3 img.jpg" alt="Зал конференций" class="services__img">
+                    <ul class="services__list">
+                      <li class="services__item">Предоставление бизнес аккаунта</li>
+                      <li class="services__item">Трансляция на сайт заказчика или любую платформу</li>
+                      <li class="services__item">Трансляция на сайт заказчика или любую платформу</li>
+                      <li class="services__item">Запуск опросов и дискуссионных комнат</li>
+                      <li class="services__item">Отслеживание работы в прямом эфире</li>
+                    </ul>
+                  <p class="services__text">Мы организуем конференцию, чтобы вас услышали!</p>
+                </div>
+              </div>
+              <div class="right-col">
+                <div class="services__card">
+                  <span class="services__line"></span>
+                  <h3 class="services__subtitle">
+                    Создание графики
+                  </h3>
+                  <img src="img/services 2 img.jpg" alt="Графика" class="services__img">
+                  <ul class="services__list">
+                    <li class="services__item">Для трансляций</li>
+                    <li class="services__item">Для телевизионной и онлайн-рекламы</li>
+                    <li class="services__item">Для кино и сериалов</li>
+                    <li class="services__item">Для корпоративных фильмов</li>
+                    <li class="services__item">Для инсталляций и мероприятий</li>
+                  </ul>
+                  <p class="services__text">Визуализируем любые идеи!</p>
+                </div>
+                <div class="services__card">
+                  <span class="services__line"></span>
+                  <h3 class="services__subtitle">
+                    Съемка клипов
+                  </h3>
+                  <img src="img/services 4 img.jpg" alt="Съемка клипа" class="services__img">
+                  <p class="services__content-text">
+                    Организация и проведение съёмок музыкальных клипов и мероприятий для музыкантов. Опыт команды позволяет делать качественные съемки в самых разных условиях. В том числе съемка ка концертах исполнителей. Компетенции команды позволяют находить неординарные технические решения для выполнения задач заказчика.
+                  </p>
+                  <p class="services__text">Создаем трендовые музыкальные ролики!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about" id = 'about-id'>
+          <div class="container">
+            <div class="about__inner">
+              <div class="about__box">
+                <p class="about__text">Компания Signal работает на&nbsp;стыке технологий и творчества.</p>
+                <p class="about__text-description">Агентство оказывает весь комплекс услуг по креативному и техническому обеспечению мероприятий. <br><br> Наша главная задача в любом проекте – найти техническое решение для самых смелых идей заказчика и реализовать их.
+                </p>
+              </div>
+              <h2 class="title about__title title_color_gray">СЕГОДНЯ SIGNAL – ЭТО</h2>
+              <ul class="about__list">
+                <li class="about__item"><p class="about__item-text"><span class="about__item-num">1400</span><br> часов отснятого <br>материала</p></li>
+                <li class="about__item"><p class="about__item-text"><span class="about__item-num">500</span><br> мероприятий по всей территории России</p></li>
+                <li class="about__item"><p class="about__item-text"><span class="about__item-num">700</span><br> видов спорта с нашим участием</p></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="partners" id = 'partners-id'>
+          <div class="container">
+            <h2 class="title partners__title">ПАРТНЕРЫ</h2>
+            <ul class="partners__list">
+              <li class="partners__item">
+                <img src="img/muaythai 1.jpg" alt="Спортивная федераций тайского бокса муайтай" class="partners__img">
+              </li>
+              <li class="partners__item">
+                <img src="img/athletic 1.jpg" alt="Всероссийская федерация легкой атлетики" class="partners__img">
+              </li>
+              <li class="partners__item">
+                <img src="img/mossport 2.jpg" alt="Московский спорт" class="partners__img">
+              </li>
+              <li class="partners__item">
+                <img src="img/depsport 1.jpg" alt="Департамент спорта города Москвы" class="partners__img">
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="contacts-id">
+        <div class="container">
+          <div class="title footer__title title_color_white">КОНТАКТЫ</div>
+          <div class="footer__top">
+            <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5379.113239365096!2d37.57286426656005!3d55.73506903245691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bbda36ae3cd%3A0x2d9f1e0ac5b00c8c!2z0JHQvtC70YzRiNC-0Lkg0KHQsNCy0LLQuNC90YHQutC40Lkg0L_QtdGALiwgOdGBMiwg0JzQvtGB0LrQstCwLCAxMTk0MzU!5e0!3m2!1sru!2sru!4v1719123995095!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="#" class="footer__form" method="post">
+                <label class="footer__label" for="username">ИМЯ</label><input placeholder="Введите ваше имя" class="footer__form-item" type="text" name="name" id = "username">
+                <label class="footer__label" for="usertel">ТЕЛЕФОН</label><input placeholder="+7 (___) ___-__-__" class="footer__form-item" type="tel" name="tel" id = "usertel">
+                <label class="footer__label" for="usermessage">СООБЩЕНИЕ</label><textarea  placeholder="Введите текст сообщения" class="footer__form-item footer__form-item-last footer__form-item_height_bigger" name="message" id="usermessage"></textarea>
+                <button class="btn footer__button" type="submit"><p class="footer__button-text">ОТПРАВИТЬ</p><span class="footer__arrow"><svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.5 6.99985H16.5M16.5 6.99985L10.1667 0.990234M16.5 6.99985L10.1667 13.0095" stroke="#DBDBDB" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  </span></button>
+            </form>
+            <div class="footer__info">
+              <h3 class="footer__subtitle">АДРЕС</h3>
+              <address class="footer__info-item">г. Москва, Большой Саввинский переулок, 9с2</address>
+              <h3 class="footer__subtitle">ПОЧТА</h3>
+              <a class="footer__info-item" href="mailto:info@signal-tv.com">info@signal-tv.com</a>
+              <h3 class="footer__subtitle">ТЕЛЕФОН</h3>
+              <a class="footer__info-item" href="tel:+79250774157">+7(925) 077-41-57</a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <a href="" class="logo footer__logo">
+              <svg width="132" height="29" class="logo__svg footer__logo-svg" viewBox="0 0 132 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_225_59)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M26.9763 1.53356C27.2508 1.79666 27.4679 2.11271 27.6141 2.46217C27.7604 2.81162 27.8326 3.18704 27.8263 3.56522V3.63823C27.8232 4.00656 27.7464 4.37064 27.6005 4.7095C27.4547 5.04837 27.2425 5.35534 26.9763 5.61275C26.7104 5.88447 26.391 6.09933 26.0379 6.24402C25.6848 6.38872 25.3055 6.46018 24.9233 6.45398C24.1605 6.4583 23.4267 6.16533 22.8804 5.63841C22.3342 5.1115 22.0194 4.39298 22.0043 3.63823V3.56522C21.998 3.18704 22.0702 2.81162 22.2164 2.46217C22.3627 2.11271 22.5798 1.79666 22.8543 1.53356C23.1239 1.26228 23.4462 1.04788 23.8018 0.903297C24.1574 0.758712 24.5389 0.686944 24.9233 0.692326C25.3055 0.686133 25.6848 0.757594 26.0379 0.902289C26.391 1.04698 26.7104 1.26184 26.9763 1.53356Z" fill="#EB5C60"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M131.148 23.7707V28.453H116.825V3.5652H122.647V23.7707H131.148ZM103.112 3.5652L113.184 28.453H107.651L105.678 23.1199H95.3814L93.3926 28.453H87.9876L98.0278 3.5652H103.112ZM96.9853 18.7868H104.074L100.546 9.26337L96.9853 18.7868ZM78.637 3.5652H84.3949V28.453H79.6154L67.0892 13.3584V28.453H61.3153V3.5652H66.1269L78.637 18.6598V3.5652ZM46.3352 8.0412C45.1919 8.02617 44.0555 8.21987 42.9831 8.6126C42.0119 8.97344 41.1271 9.53017 40.3849 10.2475C39.6454 10.958 39.0707 11.8191 38.7008 12.7712C38.3006 13.8039 38.1045 14.9032 38.1234 16.0091C38.1041 17.1099 38.3002 18.2041 38.7008 19.2312C39.0792 20.1836 39.6525 21.0483 40.3849 21.7708C41.1139 22.4929 41.9882 23.0553 42.9511 23.4215C44.012 23.8153 45.1381 24.0092 46.2711 23.9929C47.4119 23.9941 48.5449 23.8063 49.6231 23.4374C50.0258 23.2974 50.4171 23.1276 50.794 22.9294V15.6282H56.1027V25.7071C54.6645 26.7575 53.0527 27.5523 51.3393 28.0562C49.5895 28.5973 47.7675 28.8756 45.9342 28.8816C44.0726 28.901 42.2236 28.5781 40.4811 27.9292C38.8575 27.3361 37.3692 26.4298 36.1026 25.2627C34.8808 24.0994 33.905 22.7074 33.2316 21.1676C32.5444 19.5339 32.2006 17.7787 32.2212 16.0091C32.2185 15.2652 32.2742 14.5223 32.388 13.787C32.9311 13.388 33.4436 12.9498 33.9213 12.4759C35.8174 10.6446 37.0565 8.25007 37.4498 5.65717C38.3916 4.99936 39.416 4.46579 40.4971 4.06994C42.2633 3.42802 44.1331 3.11066 46.0144 3.13347C48.0757 3.1273 50.1203 3.49862 52.045 4.22866C52.6052 4.43295 53.1517 4.67259 53.6809 4.94609C53.8638 5.04133 54.2006 5.23814 54.6913 5.53337V10.8506C53.8977 10.2711 53.0614 9.75114 52.1893 9.29511C51.6157 9.02426 51.0202 8.80127 50.409 8.62847C49.7565 8.44557 49.092 8.30768 48.4202 8.21579C47.7306 8.10622 47.0336 8.04786 46.3352 8.0412ZM22.0046 15.8345C22.9785 16.0497 23.9738 16.1562 24.9717 16.152C25.9311 16.1549 26.8881 16.057 27.8266 15.8599V28.453H22.0046V15.8345ZM17.7864 21.3644C17.7685 22.6224 17.4262 23.8549 16.792 24.9452C16.049 26.287 14.8863 27.354 13.4784 27.9864C11.8461 28.7538 10.0383 29.0822 8.23701 28.9387C6.26747 28.8181 4.66895 28.4827 3.44146 27.9324C2.54886 27.5603 1.70105 27.0908 0.913764 26.5325V20.501C2.0199 21.5443 3.28268 22.4117 4.65718 23.0723C6.02154 23.7241 7.10147 24.0839 7.89699 24.1516C8.66141 24.2222 9.43241 24.1468 10.1681 23.9294C10.7707 23.7614 11.3146 23.4318 11.7399 22.9771C12.0652 22.5893 12.2414 22.1001 12.2371 21.5962C12.2464 21.2861 12.1808 20.9784 12.0458 20.6984C11.9108 20.4185 11.7102 20.1745 11.4608 19.9867C10.8458 19.5243 10.1743 19.1403 9.46236 18.8439C8.65722 18.4915 7.76547 18.1265 6.79353 17.7487C5.8804 17.398 5.00202 16.9644 4.16961 16.4535C3.42314 15.9947 2.75689 15.419 2.19686 14.7488C1.67796 14.1345 1.31209 13.4082 1.12868 12.6283C0.944224 11.8801 0.850539 11.1128 0.849609 10.3427C0.886516 9.40507 1.08167 8.48018 1.427 7.6063C1.87101 6.49334 2.61423 5.52181 3.57618 4.79689C4.61548 3.96518 6.03972 3.48584 7.84888 3.34934C9.32043 3.23093 10.8013 3.30565 12.2531 3.57155C12.233 5.37842 12.6072 7.16829 13.3501 8.81894C12.8219 8.58561 12.2786 8.3873 11.7238 8.22532C10.8495 7.93348 9.92893 7.80118 9.00687 7.83486C8.49181 7.85506 7.98406 7.96243 7.50565 8.1523C7.25203 8.26721 7.02576 8.4338 6.84165 8.64117C6.68687 8.82506 6.55643 9.02775 6.45351 9.24432C6.34724 9.48427 6.26972 9.7357 6.22256 9.99349C6.16539 10.3152 6.15459 10.6433 6.19048 10.9681C6.23212 11.2609 6.33777 11.5413 6.50009 11.7897C6.66241 12.038 6.87749 12.2484 7.13034 12.4061C7.73471 12.8422 8.40629 13.1788 9.11914 13.4029C9.86333 13.6484 10.8256 13.9954 12.0061 14.4441C13.0705 14.823 14.085 15.3271 15.0278 15.9456C15.8711 16.5375 16.5514 17.3287 17.0069 18.2471C17.5063 19.2128 17.7731 20.2797 17.7864 21.3644Z" fill="#283238"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_225_59">
+                <rect width="130.298" height="28.2464" fill="white" transform="translate(0.849609 0.692322)"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <nav class="nav footer__nav">
+              <ul class="nav__list footer__nav-list">
+                <li class="nav__item footer__nav-item">
+                  <a href="#about-id" class="nav__link footer__nav-link nav__link_hover_color">О НАС</a>
+                </li>
+                <li class="nav__item footer__nav-item">
+                  <a href="#videos-id" class="nav__link footer__nav-link nav__link_hover_color">РОЛИКИ</a>
+                </li>
+                <li class="nav__item footer__nav-item">
+                  <a href="#services-id" class="nav__link footer__nav-link nav__link_hover_color">УСЛУГИ</a>
+                </li>
+                <li class="nav__item footer__nav-item">
+                  <a href="#partnerns-id" class="nav__link footer__nav-link nav__link_hover_color">ПАРТНЕРЫ</a>
+                </li>
+                <li class="nav__item footer__nav-item">
+                  <a href="#contacts-id" class="nav__link footer__nav-link nav__link_hover_color">КОНТАКТЫ</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="" class="rutube footer__rutube">
+              <svg class="footer__rutube-img" width="92" height="19" viewBox="0 0 92 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_185_1815)">
+                <path d="M10.2245 4.58887H0.103516V15.3889H2.92053V11.8752H8.31834L10.7812 15.3889H13.9355L11.2197 11.8591C12.0632 11.7295 12.6704 11.4219 13.0415 10.9361C13.4126 10.4504 13.5982 9.67315 13.5982 8.63685V7.82728C13.5982 7.21196 13.5307 6.72622 13.4126 6.35377C13.2945 5.98137 13.0921 5.65753 12.8054 5.36608C12.5017 5.09082 12.1644 4.89652 11.7595 4.76697C11.3547 4.65363 10.8486 4.58887 10.2245 4.58887ZM9.7691 9.49502H2.92053V6.96906H9.7691C10.1571 6.96906 10.4269 7.03384 10.5619 7.14718C10.6968 7.26051 10.7812 7.47103 10.7812 7.77868V8.68545C10.7812 9.00931 10.6968 9.21976 10.5619 9.33309C10.4269 9.44642 10.1571 9.49502 9.7691 9.49502Z" fill="#F2F2F2"/>
+                <path d="M18.1261 12.1991V4.58887H15.3906V12.1343C15.3906 12.7496 15.4398 13.2515 15.5544 13.6239C15.6691 14.0126 15.8656 14.3364 16.1605 14.6117C16.4389 14.9032 16.7665 15.0974 17.1597 15.2107C17.5528 15.3403 18.0442 15.3889 18.6666 15.3889H25.2186C25.8247 15.3889 26.3161 15.3403 26.7092 15.2107C27.1023 15.0974 27.4299 14.9032 27.7248 14.6117C28.0032 14.3364 28.1998 14.0126 28.3144 13.6239C28.4292 13.2515 28.4946 12.7496 28.4946 12.1343V4.58887H25.7592V12.1991C25.7592 12.5229 25.6773 12.7334 25.5462 12.8468C25.4152 12.9601 25.1531 13.0086 24.7764 13.0086H19.1089C18.7158 13.0086 18.4537 12.9601 18.3226 12.8468C18.1916 12.7334 18.1261 12.5229 18.1261 12.1991Z" fill="#F2F2F2"/>
+                <path d="M37.849 15.3889V6.96906H43.0552V4.58887H29.9512V6.96906H35.1572V15.3889H37.849Z" fill="#F2F2F2"/>
+                <path d="M47.2472 12.1991V4.58887H44.5117V12.1343C44.5117 12.7496 44.5609 13.2515 44.6755 13.6239C44.7902 14.0126 44.9867 14.3364 45.2816 14.6117C45.56 14.9032 45.8876 15.0974 46.2808 15.2107C46.6739 15.3403 47.1653 15.3889 47.7877 15.3889H54.3397C54.9458 15.3889 55.4372 15.3403 55.8303 15.2107C56.2234 15.0974 56.551 14.9032 56.8459 14.6117C57.1243 14.3364 57.3209 14.0126 57.4355 13.6239C57.5502 13.2515 57.6157 12.7496 57.6157 12.1343V4.58887H54.8803V12.1991C54.8803 12.5229 54.7984 12.7334 54.6673 12.8468C54.5362 12.9601 54.2742 13.0086 53.8975 13.0086H48.23C47.8369 13.0086 47.5748 12.9601 47.4437 12.8468C47.3127 12.7334 47.2472 12.5229 47.2472 12.1991Z" fill="#F2F2F2"/>
+                <path d="M71.6332 7.73008V7.51963C71.6332 6.51572 71.3709 5.77088 70.8456 5.30131C70.3209 4.83174 69.4846 4.58887 68.3696 4.58887H59.0703V15.3889H68.9106C70.0257 15.3889 70.862 15.1622 71.3873 14.6926C71.912 14.223 72.1743 13.4782 72.1743 12.4744V12.2477C72.1743 11.2438 71.912 10.5313 71.3873 10.1103C71.2887 10.0455 71.1901 9.99693 71.0921 9.9484C70.9935 9.8998 70.8456 9.83508 70.6655 9.77028C71.0263 9.57595 71.2722 9.31689 71.4196 9.02543C71.5511 8.73398 71.6332 8.2968 71.6332 7.73008ZM61.8093 8.91211V6.96906H67.9264C68.3202 6.96906 68.5826 7.03384 68.7141 7.14718C68.8449 7.26051 68.9106 7.47103 68.9106 7.77868V8.10254C68.9106 8.4264 68.8449 8.63685 68.7141 8.75018C68.5826 8.86358 68.3202 8.91211 67.9264 8.91211H61.8093ZM61.8093 13.0086V11.0656H68.484C68.8613 11.0656 69.1237 11.1304 69.2551 11.2438C69.386 11.3571 69.4682 11.5676 69.4682 11.8752V12.1991C69.4682 12.5229 69.386 12.7334 69.2551 12.8468C69.1237 12.9601 68.8613 13.0086 68.484 13.0086H61.8093Z" fill="#F2F2F2"/>
+                <path d="M76.4261 6.96906H85.5575V4.58887H73.6328V15.3889H86.0088V13.0086H76.4261V11.179H85.3398L85.5575 8.79878H76.4261V6.96906Z" fill="#F2F2F2"/>
+                <path d="M88.6886 4.05024C89.7413 4.05024 90.5952 3.20368 90.5952 2.1594C90.5952 1.11512 89.7413 0.268555 88.6886 0.268555C87.6352 0.268555 86.7812 1.11512 86.7812 2.1594C86.7812 3.20368 87.6352 4.05024 88.6886 4.05024Z" fill="#F41240"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_185_1815">
+                <rect width="91" height="18" fill="white" transform="translate(0.103516 0.268555)"/>
+                </clipPath>
+                </defs>
+                </svg>
+
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="package/swiper-bundle.min.js"></script>
+    <script src="RobinHerbots-Inputmask-8a211a8/dist/inputmask.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
